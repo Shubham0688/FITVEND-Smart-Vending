@@ -1,0 +1,203 @@
+.ads-page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 38px 5%;
+  color: #edf2e9;
+}
+
+.ads-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+
+.ads-heading small,
+.ads-panel > small {
+  color: #b8e34b;
+  letter-spacing: .13em;
+  font-weight: 800;
+}
+
+.ads-heading h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin: 8px 0;
+}
+
+.ads-heading em {
+  color: #b8e34b;
+}
+
+.ads-heading p,
+.ads-card p,
+.ads-footnote {
+  color: #aab5a5;
+}
+
+.ads-heading button,
+.ads-actions button {
+  padding: 10px 13px;
+  border: 1px solid #53604d;
+  border-radius: 8px;
+  background: #202a21;
+  color: #edf2e9;
+  cursor: pointer;
+}
+
+.ads-notice {
+  padding: 14px;
+  background: #28321e;
+  border: 1px solid #66783b;
+  border-radius: 9px;
+  line-height: 1.5;
+}
+
+.ads-stats {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.ads-stats article,
+.ads-panel {
+  background: #19211b;
+  border: 1px solid #354235;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.ads-stats span {
+  display: block;
+  color: #aab5a5;
+  font-size: .85rem;
+}
+
+.ads-stats b {
+  display: block;
+  font-size: 1.5rem;
+  color: #c7ec72;
+  margin-top: 8px;
+  overflow-wrap: anywhere;
+}
+
+.ads-columns {
+  display: grid;
+  grid-template-columns: minmax(250px, .8fr) minmax(0, 1.5fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.ads-panel h2 {
+  margin: 8px 0 18px;
+}
+
+.ads-panel label {
+  display: block;
+  margin: 12px 0;
+  color: #dce5d8;
+  font-size: .9rem;
+}
+
+.ads-panel input,
+.ads-panel textarea,
+.ads-panel select {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 6px;
+  padding: 11px;
+  border: 1px solid #465344;
+  border-radius: 8px;
+  background: #101711;
+  color: #fff;
+  font: inherit;
+}
+
+.ads-primary {
+  width: 100%;
+  padding: 12px;
+  border: 0;
+  border-radius: 8px;
+  background: #b8e34b;
+  color: #17200e;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.ads-card {
+  padding: 15px;
+  margin: 12px 0;
+  background: #202a21;
+  border: 1px solid #3a4738;
+  border-radius: 10px;
+}
+
+.ads-card-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ads-card-head span {
+  color: #c4e77b;
+  text-transform: uppercase;
+  font-size: .75rem;
+}
+
+.ads-card h3 {
+  margin: 7px 0;
+}
+
+.ads-metrics,
+.ads-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.ads-metrics {
+  color: #cbd5c6;
+  font-size: .83rem;
+}
+
+.ads-actions button {
+  font-size: .8rem;
+}
+
+.ads-message {
+  padding: 12px;
+  background: #26351f;
+  border-radius: 8px;
+}
+
+.ads-message button {
+  float: right;
+}
+
+.ads-footnote {
+  font-size: .85rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 850px) {
+  .ads-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ads-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .ads-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .ads-page {
+    padding: 25px 4%;
+  }
+}

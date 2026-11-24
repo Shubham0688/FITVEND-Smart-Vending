@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+```
+<meta name="application-name" content="FITVEND" />
+<meta name="description" content="FITVEND - Smart Gym Nutrition and Vending Experience" />
+<meta name="theme-color" content="#101810" />
+
+<title>FITVEND | Smart Gym Nutrition</title>
+```
+
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+```
+<script>
+  const url = new URL(window.location.href);
+
+  if (!url.searchParams.has("project")) {
+    url.searchParams.set("project", "fitvend");
+    window.history.replaceState({}, document.title, url.pathname + url.search);
+  }
+</script>
+
+<script type="module" src="/src/main.jsx"></script>
+```
+
+  </body>
+</html>

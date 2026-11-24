@@ -1,0 +1,312 @@
+.vending-simulation {
+  padding: 24px;
+  color: #eafff6;
+  background: #101d21;
+  border-radius: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.vs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.vs-header h1 {
+  font-size: 38px;
+  color: #36e0aa;
+  margin: 5px 0;
+}
+
+.vs-header p {
+  color: #a9c5bb;
+}
+
+.vs-label {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #36e0aa !important;
+}
+
+.vs-online {
+  background: #174a39;
+  padding: 12px 16px;
+  border-radius: 30px;
+  color: #60f5ba;
+  font-size: 13px;
+}
+
+.vs-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.vs-machine {
+  background: linear-gradient(145deg, #30464a, #14272b);
+  border: 2px solid #66857a;
+  border-radius: 20px;
+  padding: 18px;
+}
+
+.vs-machine h3 {
+  margin-bottom: 14px;
+}
+
+.vs-window {
+  background: linear-gradient(#c4e8dc, #edf8e9);
+  border: 7px solid #101d21;
+  border-radius: 12px;
+  padding: 20px;
+  color: #173a2c;
+  text-align: center;
+}
+
+.vs-shelves {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  font-size: 38px;
+}
+
+.vs-screen {
+  background: #dff8e9;
+  color: #15392b;
+  border: 5px solid #0c181b;
+  padding: 14px;
+  border-radius: 12px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.vs-screen h2 {
+  margin: 8px 0;
+  color: #087c54;
+}
+
+.vs-scanner {
+  text-align: center;
+  background: #101d21;
+  border: 1px solid #66857a;
+  border-radius: 12px;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.vs-scanner span {
+  font-size: 30px;
+}
+
+.vs-scanner button,
+.vs-dispense {
+  background: #31d7a3;
+  color: #09251d;
+  border: none;
+}
+
+.vs-scanner button {
+  padding: 10px 18px;
+  border-radius: 8px;
+}
+
+.vs-tray {
+  background: #0b1719;
+  border: 4px solid #405b56;
+  border-radius: 10px;
+  min-height: 65px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #a9c5bb;
+  overflow: hidden;
+}
+
+.vs-product-fall {
+  font-size: 38px;
+  animation: vsFall 1s ease;
+}
+
+@keyframes vsFall {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.vs-loading {
+  animation: vsPulse 0.8s infinite alternate;
+}
+
+@keyframes vsPulse {
+  to {
+    opacity: 0.4;
+  }
+}
+
+.vs-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.vs-card {
+  background: #1b2b30;
+  border: 1px solid #405b56;
+  border-radius: 15px;
+  padding: 18px;
+}
+
+.vs-card h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.vs-products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.vs-product {
+  background: #edf5ee;
+  color: #18372b;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 12px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.vs-product span {
+  font-size: 28px;
+}
+
+.vs-product.selected {
+  border-color: #36e0aa;
+  background: #d9fff0;
+}
+
+.vs-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+.vs-info span {
+  color: #a9c5bb;
+}
+
+.vs-dispense,
+.vs-reset {
+  width: 100%;
+  padding: 13px;
+  margin-top: 10px;
+  border-radius: 9px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.vs-reset {
+  background: #344b4d;
+  color: white;
+  border: 1px solid #66857a;
+}
+
+.vs-message {
+  color: #a9c5bb;
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+.vs-logs {
+  background: #10221f;
+  border: 1px solid #405b56;
+  border-radius: 14px;
+  padding: 18px;
+  margin-top: 22px;
+}
+
+.vs-logs h3 {
+  color: #55e7b2;
+  margin-bottom: 12px;
+}
+
+.vs-log-content {
+  background: #091613;
+  padding: 12px;
+  border-radius: 9px;
+  max-height: 150px;
+  overflow-y: auto;
+  color: #a9e9ca;
+  font-size: 12px;
+}
+
+.vs-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.vs-stats div {
+  background: #1b3930;
+  padding: 12px;
+  border-radius: 9px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.vs-stats strong {
+  font-size: 22px;
+  color: #55e7b2;
+}
+
+.vs-stats span {
+  font-size: 11px;
+  color: #b6cbc4;
+}
+
+.vs-disclaimer {
+  color: #a9c5bb;
+  font-size: 11px;
+  margin-top: 15px;
+}
+
+.vending-simulation button {
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.vending-simulation button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.vending-simulation button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 750px) {
+  .vs-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .vending-simulation {
+    padding: 14px;
+  }
+}
